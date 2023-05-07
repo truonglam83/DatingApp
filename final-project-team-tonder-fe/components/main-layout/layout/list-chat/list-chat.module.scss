@@ -1,0 +1,74 @@
+@import '../../../..//styles/variables/variables';
+.list__chat {
+  :global {
+    .ant-list-item .ant-list-item-meta {
+      align-items: center;
+    }
+    .ant-list-item {
+      padding: 16px 0;
+      border: none;
+    }
+  }
+
+  .name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $main-text-color !important;
+  }
+  .time,
+  .message {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-neutral-40;
+  }
+
+  .item__container {
+    position: relative;
+
+    .avatar {
+      border-radius: 16px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &--online {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0.85rem;
+      height: 0.85rem;
+      border-radius: 50%;
+      border: 2px solid $color-neutral-white;
+      background-color: rgb(59, 203, 59);
+    }
+
+    &--offline {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0.85rem;
+      height: 0.85rem;
+      border-radius: 50%;
+      border: 2px solid $color-neutral-white;
+      background-color: rgb(246, 38, 38);
+    }
+  }
+}
+
+.no__conversation {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  img {
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+  }
+}

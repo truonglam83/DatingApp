@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tonder
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tonder
+  template:
+    metadata:
+      labels:
+        app: tonder
+    spec:
+      containers:
+        - name: tonder
+          image: tonder:latest
+          ports:
+            - containerPort: 8888
+          env:
+            - name: NODE_ENV
+              value: production

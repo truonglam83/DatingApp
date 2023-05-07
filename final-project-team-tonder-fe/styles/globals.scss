@@ -1,0 +1,74 @@
+@import './variables/variables';
+@import 'antd/dist/reset.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff-primary;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  background-color: $color-neutral-white;
+  height: auto;
+}
+
+.container {
+  padding: 1rem;
+}
+
+p {
+  font-family: $ff-primary;
+  margin-bottom: 0rem;
+}
+
+.button__custom--center {
+  justify-content: center;
+}
+
+.button__custom--sb {
+  justify-content: space-between;
+  margin: 0;
+}
+
+.button__custom--sb--loading {
+  justify-content: center;
+  background-color: $color-primary-100;
+}
+
+.ant-image .ant-image-mask {
+  border-radius: 1rem;
+}
+
+.ant-image .ant-image-mask .ant-image-mask-info {
+  visibility: hidden;
+}
+
+.ant-alert {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+}
+
+.ant-form {
+  font-family: $ff-primary;
+}
+
+.ant-form .ant-form-item .ant-form-item-label {
+  padding: 0;
+}
+
+.ant-select-dropdown {
+  width: 40vw !important;
+  min-width: 40vw !important;
+  right: 9px !important;
+  left: unset !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

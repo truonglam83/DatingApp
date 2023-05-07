@@ -1,0 +1,39 @@
+@import '../../../../styles/variables/variables';
+
+.form__tag {
+  max-width: 14.5rem;
+  margin-bottom: 0.5rem;
+
+  .tag__container {
+    display: flex;
+    border: none;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+    font-size: $fs-small;
+    justify-content: space-between;
+
+    p {
+      font-size: $fs-small;
+      height: fit-content;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tag__icon {
+      display: flex;
+      align-items: center;
+      color: $color-neutral-40;
+    }
+
+    svg {
+      width: 0.8rem;
+    }
+  }
+}

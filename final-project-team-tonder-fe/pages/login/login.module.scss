@@ -1,0 +1,42 @@
+@import '../../styles/variables/variables';
+
+.login__phone {
+  :global {
+    .ant-spin-dot-item {
+      background-color: $color-neutral-white;
+      text-align: center;
+    }
+  }
+  .phone__body {
+    .body__input {
+      margin: 1.5rem 0 4.7rem 0;
+      position: relative;
+
+      img {
+        position: absolute;
+        left: 1rem;
+        top: 0.3rem;
+      }
+      input {
+        padding: 1rem 0 1rem 4.5rem;
+        width: 100%;
+        border: none;
+        background-color: #f4f5f5;
+        font-size: $fs-body-3;
+        letter-spacing: 0.05rem;
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          font-size: $fs-body-3;
+          color: $color-neutral-disable;
+        }
+      }
+      .error {
+        color: red;
+        padding: 1rem;
+      }
+    }
+  }
+}

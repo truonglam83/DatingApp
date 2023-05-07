@@ -1,0 +1,175 @@
+@import '../../../styles/variables/variables';
+
+.user__details {
+  display: flex;
+  flex-direction: column;
+
+  &--introduce,
+  &--purpose,
+  &--information,
+  &--interest {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      font-size: $fs-body-2;
+      font-weight: $fw-7;
+      line-height: $lh-2;
+      align-items: center;
+
+      &--edit {
+        font-size: $fs-body-3;
+        font-weight: $fw-4;
+        line-height: $lh-1;
+
+        color: $color-primary-main;
+
+        cursor: pointer;
+      }
+    }
+
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-size: 0.875rem;
+      font-weight: $fw-4;
+      align-items: center;
+
+      overflow-wrap: anywhere;
+
+      .desc {
+        color: $color-neutral-40;
+        font-weight: 300;
+      }
+    }
+
+    .list__hobbies {
+      :global {
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+      }
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  &--top {
+    justify-content: space-between;
+    display: flex;
+    padding: 0.5rem 0;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .user__details--icon {
+      font-size: 0.75rem;
+      color: $color-neutral-40;
+    }
+  }
+}
+
+.custom_button--purple {
+  width: 100%;
+  color: $color-neutral-white;
+  background-color: $color-primary-main;
+  margin-bottom: 3rem;
+  transition: 0.5s ease;
+
+  &:checked {
+    color: $color-neutral-white;
+  }
+}
+
+.custom_button--disable {
+  width: 100%;
+  color: $color-neutral-white;
+  background-color: $color-neutral-disable;
+  margin-bottom: 3rem;
+
+  &:checked {
+    color: $color-neutral-white;
+  }
+}
+
+.choosing {
+  padding: 2.5rem 0;
+
+  :global {
+    .ant-radio-group {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+
+    border-radius: 12px;
+    background-color: $color-neutral-5;
+
+    img {
+      flex: 1;
+    }
+
+    &--details {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.5rem;
+      flex: 6;
+
+      &__title {
+        font-size: $fs-body-2;
+        font-weight: $fw-7;
+      }
+
+      &__body {
+        font-size: 0.875rem;
+        font-weight: $fw-4;
+      }
+    }
+  }
+}
+
+.introduce__tile,
+.purpose__tile {
+  font-weight: $fw-7;
+  font-size: $fs-body-2;
+  line-height: $lh-2;
+}
+.footer__edit--details {
+  margin-bottom: 2rem;
+}
+.introduce__description,
+.purpose__description {
+  font-weight: $fw-4;
+  font-size: $fs-body-3;
+  line-height: 1.3rem;
+  color: $color-neutral-60;
+  margin-top: 0.35rem;
+}
+
+.message__error {
+  padding: 0.3rem;
+  color: red;
+}
+
+.drawer--body {
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.user__details {
+  :global {
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+      color: $color-neutral-40;
+      font-weight: 300;
+    }
+  }
+}

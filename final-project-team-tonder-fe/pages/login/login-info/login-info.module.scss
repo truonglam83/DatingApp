@@ -1,0 +1,38 @@
+@import '../../../styles/variables/variables';
+
+.login__info {
+  :global {
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      padding: 1rem 0.7rem 0;
+      height: 3rem;
+      border: none;
+      background-color: #f4f5f5;
+    }
+    .ant-picker {
+      padding: 1.6rem 0.75rem 0.5rem 0.75rem;
+      border: none;
+      background-color: #f4f5f5;
+    }
+  }
+
+  .login__form {
+    margin-top: 1.5rem;
+    .button__custom {
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .info__input {
+    padding: 1.5rem 0.75rem 0.25rem 0.75rem;
+    border: none;
+    background-color: #f4f5f5;
+    letter-spacing: 0.05rem;
+  }
+
+  .error {
+    font-size: $fs-small;
+    color: red;
+    margin-bottom: 1rem;
+  }
+}

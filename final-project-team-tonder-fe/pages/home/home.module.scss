@@ -1,0 +1,90 @@
+@import '../../styles/variables/variables';
+
+.home {
+  padding: 0rem 1rem 1.2rem 1rem;
+  :global {
+    .ant-image-mask {
+      display: none;
+    }
+    .ant-input-affix-wrapper {
+      border-radius: 1.875rem;
+      .ant-input {
+        color: $color-primary-main;
+        font-weight: $fw-7;
+        &::placeholder {
+          color: $color-primary-main;
+          font-weight: $fw-7;
+        }
+      }
+    }
+  }
+  .slide {
+    border-radius: 1.563rem;
+    .content {
+      position: relative;
+      text-align: center;
+      height: 69vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.7038165608040091) 0%,
+          rgba(255, 255, 255, 0) 60%
+        );
+      }
+      .avatar--user {
+        height: 70vh;
+        width: 100vw;
+        object-fit: cover;
+        position: relative;
+        border-radius: 1.563rem;
+      }
+      .info--user {
+        position: absolute;
+        width: 100%;
+        bottom: 20%;
+        z-index: 11;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.75rem 0 1.2rem;
+        .info--detail {
+          .info__distance {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            border-radius: 1.563rem;
+            padding: 0.25rem 1rem 0.25rem 0.75rem;
+            margin: 0.6rem 0;
+            background-color: $color-neutral-white;
+            font-size: $fs-caption;
+            width: fit-content;
+          }
+        }
+        p {
+          font-weight: $fw-7;
+          font-size: $fs-title-3;
+          color: $color-neutral-white;
+        }
+      }
+    }
+  }
+  .nodata {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary-main;
+    p {
+      font-size: $fs-body-3;
+      font-weight: $fw-4;
+    }
+  }
+}

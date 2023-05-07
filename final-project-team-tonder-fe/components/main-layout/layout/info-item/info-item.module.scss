@@ -1,0 +1,38 @@
+@import '../../../../styles/variables/variables';
+.info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  .avatar__wrap {
+    position: relative;
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      margin-right: 20px;
+    }
+    .loveIcon {
+      position: absolute;
+      top: 46%;
+      right: 12px;
+    }
+  }
+  .infomation__wrap {
+    flex: 1;
+    .name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: $main-text-color;
+      margin-bottom: 4px;
+    }
+    .status {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $color-neutral-40;
+    }
+  }
+}

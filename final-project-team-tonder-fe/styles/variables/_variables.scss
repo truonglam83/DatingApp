@@ -1,0 +1,70 @@
+@import '../fonts/index.scss';
+// ==================== Typo =================== //
+// title
+$fs-title-0: 3rem; // 48px
+$fs-title-1: 2.5rem; // 40px
+$fs-title-2: 2rem; // 32px
+$fs-title-3: 1.5rem; // 24px
+$fs-title-4: 1.25rem; // 20px
+
+// body
+$fs-body-1: 1.5rem;
+$fs-body-2: 1rem; // 16px
+$fs-body-3: 0.875rem; // 14px
+
+// text-button
+$fs-text-button: 1.125rem; // 18px
+$fs-button: 1rem;
+
+// caption
+$fs-caption: 0.875rem;
+
+// small
+$fs-small: 0.75rem;
+
+// display:
+$fs-display: 4rem;
+
+// ==================== Font weight =================== //
+$fw-1: 100;
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+$fw-8: 800;
+
+// ==================== Line height =================== //
+$lh-1: 1.125; // 18px
+$lh-2: 1.5rem; // 24px
+$lh-3: 2.5rem; // 40px
+$lh-4: 2rem; // 32px
+
+// ==================== Color =================== //
+// Main text color, can be used in other elements such as button, border, disabled item, scrim, etc
+$main-text-color: #2a2846;
+$color-neutral-100: #22313f;
+$color-neutral-80: #55536b;
+$color-neutral-65: #7f7e90;
+$color-neutral-60: #7a838c;
+$color-neutral-40: #aaa9b5;
+$color-neutral-20: #d4d4da;
+$color-neutral-10: #eae9ed;
+$color-neutral-5: #f4f4f6;
+$color-neutral-white: #ffffff;
+$color-neutral-black: #000000;
+$color-neutral-active: #a5a2a2;
+$color-neutral-disable: #a7adb2;
+$color-neutral-red: #ff0000;
+
+$color-border: #d9d9d9;
+
+// Primary
+$color-primary-main: #7a56fe;
+$color-primary-100: #7a66c7;
+$color-primary-80: #c5c2f3;
+$color-primary-65: #f9f9ff;
+
+$ff-primary: 'SVN-Circular', sans-serif;
+$ff-secondary: 'SVN-Gilroy', sans-serif;

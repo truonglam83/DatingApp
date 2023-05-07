@@ -1,0 +1,107 @@
+@import '../../../../styles/variables/variables';
+
+.header__wrapper {
+  .wrapper__bell {
+    position: relative;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2rem;
+  .title__main {
+    padding: 1rem 1rem 0 1rem;
+    font-size: $fs-title-2;
+    color: #7a56fe;
+    display: inline-block;
+    font-weight: $fw-8;
+  }
+
+  .title__subMain {
+    padding: 1rem 1rem 0 1rem;
+    font-size: $fs-title-2;
+    color: $color-neutral-black;
+    display: inline-block;
+    font-weight: $fw-8;
+  }
+
+  .noti__length {
+    position: absolute;
+    top: 2%;
+    right: 7%;
+    color: $color-neutral-white;
+    background-color: $color-primary-main;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+  }
+
+  .noti__wrapper {
+    color: red;
+  }
+
+  :global {
+    .anticon {
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}
+
+.noti__popover {
+  :global {
+    .ant-popover .ant-popover-title {
+      margin-bottom: 1rem;
+    }
+    .ant-popover-content {
+      overflow: scroll;
+      object-fit: cover;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      max-height: 200px;
+      border-radius: 0.5rem;
+      .noti__exist {
+        color: $color-neutral-active;
+      }
+      .ant-popover-inner {
+        max-width: 300px;
+        background-color: #fff;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        p {
+          display: inline-block;
+          padding: 0.5rem 0;
+        }
+        img {
+          border-radius: 50%;
+          margin-right: 0.2rem;
+        }
+        a {
+          padding: 0 0.2rem;
+          color: $color-primary-main;
+        }
+        svg {
+          margin-top: 0.3rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .noti__seen {
+      color: $color-neutral-active;
+      a {
+        color: $color-neutral-active;
+      }
+    }
+    .ant-popover-inner-content {
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

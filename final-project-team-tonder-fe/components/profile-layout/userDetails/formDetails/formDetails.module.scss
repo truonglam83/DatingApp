@@ -1,0 +1,40 @@
+@import '../../../../styles/variables/variables';
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+  margin: 0.5rem 0 2rem 0;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: $fs-body-3;
+    font-weight: 700;
+    &--property {
+      display: flex;
+      align-items: center;
+
+      gap: 1rem;
+
+      font-weight: $fw-5;
+      line-height: $lh-1;
+    }
+
+    &--value {
+      color: $color-neutral-40;
+    }
+
+    &--detail {
+      height: 0.75rem;
+      font-weight: 400;
+    }
+  }
+  :global {
+    .ant-select .ant-select-arrow {
+      inset-inline-end: 0;
+    }
+  }
+}

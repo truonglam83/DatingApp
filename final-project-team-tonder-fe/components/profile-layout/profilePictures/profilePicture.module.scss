@@ -1,0 +1,282 @@
+@import '../../../styles/variables/variables';
+.profile__picture {
+  margin-bottom: 3rem;
+  :global {
+    .ant-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+  }
+
+  .picture__add {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    border: 3px dotted #333;
+    border-radius: 0.75rem;
+
+    .overlay {
+      top: 0;
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+      min-height: 6.5rem;
+
+      .add-file {
+        position: relative;
+        display: inline-block;
+      }
+
+      .more--icon {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        font-size: 1.5rem;
+        top: 30%;
+        left: 37.5%;
+      }
+
+      .add--icon {
+        z-index: 2;
+        font-size: 48px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .add-icon i {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .add__picture {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+  }
+
+  .add--desc {
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &--first,
+  &--other {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--first {
+    max-height: 15rem;
+    min-height: 15rem;
+  }
+
+  &--other {
+    min-height: 7rem;
+    max-height: 7rem;
+  }
+
+  &--loading {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  &--upload-btn {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: $color-primary-main;
+    color: $color-neutral-white;
+  }
+}
+
+.dialog__title {
+  line-height: $lh-2;
+  width: 95%;
+}
+
+.image--container {
+  position: relative;
+
+  .overlay {
+    top: 0;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+
+    .add-file {
+      position: relative;
+      display: inline-block;
+    }
+
+    .more--icon {
+      position: absolute;
+      z-index: 2;
+      color: white;
+      font-size: 1.5rem;
+      top: 30%;
+      left: 37.5%;
+    }
+
+    .add--icon {
+      position: absolute;
+      z-index: 2;
+      color: white;
+      font-size: 48px;
+      top: 15%;
+      left: 37.5%;
+    }
+
+    .add-icon i {
+      cursor: pointer;
+    }
+  }
+}
+
+.edit__modal {
+  display: flex;
+  flex-direction: column;
+
+  &--title {
+    color: #333;
+    font-size: $fs-body-1;
+    line-height: $lh-1;
+  }
+
+  &--desc {
+    color: #333;
+    font-size: $fs-body-3;
+    line-height: $lh-2;
+  }
+}
+
+.photo-gallery {
+  &__actions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & > .actions__delete,
+    & > .actions__favorite {
+      font-size: 16px;
+      padding: 10px 10px;
+      margin: 0 10px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      display: none;
+
+      &:hover {
+        border-radius: 0.75rem;
+      }
+    }
+
+    & > .actions__delete {
+      &:hover {
+        border-radius: 0.75rem;
+      }
+    }
+  }
+
+  &__photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 4px 0 #333;
+    border-radius: 0.75rem;
+
+    .image__preview {
+      position: relative;
+      width: 100%;
+
+      :global {
+        .ant-image {
+          display: block;
+        }
+      }
+
+      &--item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.75rem;
+      }
+
+      &--icon {
+        position: absolute;
+        left: 0;
+        width: 3rem;
+        height: 3rem;
+        z-index: 1;
+      }
+    }
+
+    &:hover {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+        transition: 0.5s ease-in-out;
+
+        border-radius: 0.75rem;
+      }
+      button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        display: block;
+        width: 9rem;
+
+        &:hover {
+          color: #000;
+          border-radius: 0.75rem;
+        }
+      }
+
+      .actions__delete {
+        color: red;
+        display: block;
+        font-size: 2rem;
+      }
+
+      .actions__favorite {
+        color: pink;
+        display: block;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.close--btn {
+  background-color: $color-primary-main;
+  color: $color-neutral-white;
+}

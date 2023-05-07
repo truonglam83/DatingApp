@@ -1,0 +1,58 @@
+@import '../../../..//styles/variables/variables';
+
+.message {
+  display: flex;
+  flex-direction: column;
+
+  .message__top {
+    display: flex;
+    margin-top: 20px;
+
+    .message__image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .message__img {
+      width: 250px;
+      border-radius: 15px;
+    }
+    .message__text {
+      padding: 10px;
+      border-radius: 0px 20px 20px 20px;
+      color: #000;
+      background-color: $color-neutral-10;
+      font-size: 14px;
+      // word-break: break-all;
+      overflow-wrap: break-word;
+      text-align: left;
+    }
+  }
+
+  .message__bottom {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+.message.own {
+  align-items: flex-end;
+
+  .message__top {
+    flex-direction: row-reverse;
+  }
+  .message__image {
+    margin-left: 10px;
+  }
+  .message__text {
+    align-items: flex-end;
+    border-radius: 20px 0 20px 20px;
+    // word-break: break-all;
+    overflow-wrap: break-word;
+    text-align: left;
+    background-color: $color-primary-100;
+    color: $color-neutral-white;
+  }
+}

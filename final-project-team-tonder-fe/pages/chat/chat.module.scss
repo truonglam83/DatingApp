@@ -1,0 +1,49 @@
+@import '../../styles/variables/variables';
+.chat__wrapper {
+  padding: 0 1rem;
+  .chat__title {
+    font-weight: 700;
+    font-size: $fs-title-3;
+    line-height: $lh-4;
+    color: $main-text-color;
+    padding: 0.688rem 0;
+    margin-bottom: 0;
+  }
+  .chatbox__title,
+  .favorite__title {
+    font-weight: 700;
+    font-size: $fs-body-2;
+    line-height: $lh-2;
+    margin-top: 8px !important;
+    margin-bottom: 16px;
+    letter-spacing: 0.08rem;
+  }
+  .chatbox__title {
+    margin-top: 28px !important;
+    margin-bottom: 0;
+  }
+  .matched {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+    .matched__title {
+      font-size: $fs-title-3;
+      padding-bottom: 2rem;
+    }
+    .matched__button {
+      border: none;
+      background-color: $color-primary-100;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+.chat__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  color: $color-primary-main;
+}

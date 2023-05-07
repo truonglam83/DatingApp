@@ -1,0 +1,24 @@
+@import '../../../../../styles/variables/variables';
+
+.phone__header {
+  display: flex;
+  flex-direction: column;
+  .header__arrow {
+    margin-left: 1rem;
+  }
+  .body__image {
+    margin-top: 3rem;
+  }
+  .body__title {
+    font-size: $fs-title-4;
+    font-weight: $fw-7;
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  .body__desc {
+    font-size: $fs-caption;
+    color: #a7adb2;
+    line-height: 18px;
+    letter-spacing: 0.05rem;
+  }
+}

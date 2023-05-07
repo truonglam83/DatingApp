@@ -1,0 +1,48 @@
+@import '../../../styles/variables/variables';
+
+.login__otp {
+  :global {
+    .ant-spin-dot-item {
+      background-color: white;
+    }
+  }
+  .body__board {
+    color: white;
+    align-self: center;
+    justify-content: flex-start;
+    display: grid;
+    column-gap: 0.25em;
+    grid-template-columns: repeat(6, 0fr);
+    margin-bottom: 2em;
+  }
+  input {
+    font-size: 2rem;
+    // width: 1rem !important;
+    // height: 1rem;
+    width: 28px !important;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid $color-neutral-65;
+    background: $color-neutral-20;
+    cursor: pointer;
+    border: none;
+    margin: 2.74rem 0.3rem 0;
+    color: $color-neutral-80;
+    font-size: 0.8rem;
+    line-height: 2rem;
+    text-align: center;
+    &:focus {
+      outline: none;
+    }
+  }
+  .otp__link {
+    margin: 2.5rem 0 2.25rem;
+    text-align: right;
+    color: #5d5fef;
+    position: relative;
+
+    .time {
+      padding-left: 1rem;
+    }
+  }
+}

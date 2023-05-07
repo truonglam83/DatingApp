@@ -1,0 +1,33 @@
+@import '../../../styles/variables/variables';
+
+.button__custom {
+  display: flex;
+  background-color: #7a56fe;
+  align-items: center;
+  border-radius: 0.8rem;
+  width: 90%;
+  padding: 1.3rem 1.5rem;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 1rem;
+  .button__text {
+    font-weight: $fw-7;
+    color: $color-neutral-white;
+  }
+}
+
+.button__loading {
+  display: flex;
+  background-color: #7a56fe;
+  align-items: center;
+  border-radius: 0.8rem;
+  width: 90%;
+  padding: 1.3rem 1.5rem;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 1rem;
+  .button__text {
+    font-weight: $fw-7;
+    color: $color-neutral-disable;
+  }
+}

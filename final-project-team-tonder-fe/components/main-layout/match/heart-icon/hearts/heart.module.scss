@@ -1,0 +1,25 @@
+.heart-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .container__img {
+    text-align: center;
+    stroke: #fd65b7;
+    stroke-width: 10px;
+    fill: transparent;
+
+    &_left {
+      transform: rotate(-15deg);
+      margin-right: 7.5rem;
+      position: absolute;
+    }
+
+    &_right {
+      margin-left: 7.5rem;
+      transform: rotate(15deg);
+      z-index: 10;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../../styles/variables/variables";
+.match {
+  :global {
+    .ant-input-affix-wrapper {
+      border-radius: 1.875rem;
+      .ant-input {
+        color: $color-primary-main;
+        font-weight: $fw-7;
+        &::placeholder {
+          color: $color-primary-main;
+          font-weight: $fw-7;
+        }
+      }
+    }
+  }
+  color: $color-neutral-white;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: $color-primary-main;
+  .match--images {
+    position: relative;
+    padding-top: 20vh;
+  }
+  .match--content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 0 20%;
+    z-index: 2;
+    margin-top: 10rem;
+    p {
+      font-size: $fs-body-2;
+      line-height: $lh-1;
+      font-weight: $fw-4;
+    }
+  }
+
+  .match--input {
+    width: 100%;
+    text-align: center;
+    p {
+      padding-top: 2rem;
+      font-size: $fs-body-2;
+      font-weight: $fw-4;
+      line-height: $lh-2;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../../styles/variables/variables';
+
+.item__wrapper {
+  margin-bottom: 0.5rem;
+
+  .item__label {
+    font-weight: $fw-5;
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../../styles/variables/variables';
+
+.anchor__container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  top: 1.5%;
+  left: 3%;
+  width: 4rem;
+  gap: 1rem;
+
+  &--current,
+  &--prevBtn,
+  &--nextBtn {
+    background-color: $color-neutral-white;
+    color: $color-primary-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

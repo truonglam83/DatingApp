@@ -1,0 +1,18 @@
+.favorite__list {
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.favorite__list::-webkit-scrollbar {
+  display: none;
+}
+
+.no__match {
+  p {
+    color: #b8b4b4;
+    letter-spacing: 0.08rem;
+    text-align: center;
+  }
+}

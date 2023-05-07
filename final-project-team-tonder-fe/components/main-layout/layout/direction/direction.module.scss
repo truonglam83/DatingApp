@@ -1,0 +1,15 @@
+.direction__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .icon__back {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+
+  .icon__setting {
+    width: 40px;
+    height: 40px;
+  }
+}

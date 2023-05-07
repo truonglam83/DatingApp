@@ -1,0 +1,46 @@
+<script type="module">
+
+    import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
+
+    const url = "http://localhost:9906";
+
+    const socket = io(url, {
+        transports: ["websocket"],
+    });
+
+
+
+
+    socket.on("connection", (socket) => {
+
+        console.log("socket", socket);
+    });
+
+
+
+
+    socket.on("message", function (data) {
+
+        console.log("data", data);
+
+    });
+
+
+
+
+    socket.on("helpTable", function (data) {
+
+        console.log("helpTable", data);
+
+    });
+
+
+
+
+    socket.on("newOrder", function (data) {
+
+        console.log("newOrder", data);
+
+    });
+
+</script>

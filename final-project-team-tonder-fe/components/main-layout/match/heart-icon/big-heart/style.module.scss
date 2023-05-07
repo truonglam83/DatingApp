@@ -1,0 +1,10 @@
+.heart-main {
+  overflow: visible;
+  width: 70%;
+  path {
+    width: 100%;
+    transform: scale(3);
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1550;
+  }
+}

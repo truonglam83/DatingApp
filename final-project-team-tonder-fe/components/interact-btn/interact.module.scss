@@ -1,0 +1,66 @@
+@import '@/styles/variables/variables';
+
+.button {
+  position: absolute;
+  z-index: 1002;
+  bottom: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  left: 0;
+
+  :global {
+    .ant-image {
+      border-radius: 50%;
+      box-shadow: rgba(149, 157, 165, 0.4) 0px 0px 24px;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
+.match {
+  color: $color-neutral-white;
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: $color-primary-main;
+  .match--close {
+    text-align: right;
+  }
+  .match--images {
+    position: relative;
+    padding-top: 20vh;
+  }
+  .match--content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 0 20%;
+    z-index: 2;
+    margin-top: 10rem;
+    p {
+      font-size: $fs-body-2;
+      line-height: $lh-1;
+      font-weight: $fw-4;
+    }
+  }
+  .match--input {
+    width: 100%;
+    text-align: center;
+    p {
+      padding-top: 2rem;
+      font-size: $fs-body-2;
+      font-weight: $fw-4;
+      line-height: $lh-2;
+    }
+  }
+}

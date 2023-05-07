@@ -1,0 +1,105 @@
+@import '../../../styles/variables/variables';
+
+.message__wrapper {
+  padding: 0.2rem 16px;
+  height: 100%;
+  .send__icon {
+    margin-left: 0.5rem;
+  }
+  .send__icon__active {
+    cursor: not-allowed;
+    margin-left: 0.5rem;
+  }
+
+  position: relative;
+  .mess__header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+    margin-bottom: 0.2rem;
+    background-color: white;
+  }
+  .chat__message {
+    height: 73vh;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .set__message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 1rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    .input {
+      flex: 1;
+      margin: 0 8px;
+      position: relative;
+      height: 36px;
+
+      .input__message {
+        width: 100%;
+        height: 100%;
+        background: $color-neutral-5;
+        border-radius: 18px;
+        border: none;
+
+        padding: 0.5rem 2.75rem 0.5rem 0.5rem;
+        resize: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .text__icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+      }
+      .load__icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .box__image {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 3rem;
+    overflow: scroll;
+    width: 80vw;
+    margin: 0 auto;
+
+    .image__preview {
+      position: relative;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+      .button__delete {
+        position: absolute;
+        right: 0;
+        border-radius: 50%;
+        border: none;
+        color: red;
+        background: none;
+      }
+    }
+  }
+  .input__emoji {
+    position: absolute;
+    bottom: 10vh;
+  }
+}

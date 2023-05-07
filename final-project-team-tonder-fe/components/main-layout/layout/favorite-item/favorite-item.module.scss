@@ -1,0 +1,40 @@
+@import '../../../../styles/variables/variables';
+.profile {
+  display: inline-flex;
+  flex-direction: column;
+  .avatar {
+    width: 89px;
+    height: 89px;
+    margin-right: 16px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: $color-neutral-10;
+    object-fit: cover;
+  }
+  .icon__wrap {
+    display: flex;
+    height: 28px;
+    border: 1px solid #e9eaec;
+    margin-right: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 12px 12px;
+
+    button {
+      position: relative;
+      border: none;
+      width: 50%;
+      background: none;
+    }
+
+    button:first-child::after {
+      content: '';
+      width: 1px;
+      height: 11px;
+      background-color: #e9eaec;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../../../styles/variables/variables';
+.footer {
+  :global {
+    .ant-row {
+      align-items: flex-end;
+    }
+  }
+  border-radius: 24px 24px 0px 0px;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  color: $color-neutral-40;
+  background-color: $color-neutral-white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.active {
+  color: $color-primary-main;
+  font-weight: bolder;
+}

@@ -1,0 +1,54 @@
+@import "../../../styles/variables/variables";
+
+.profile__container {
+    height: auto;
+
+    padding: 1rem;
+
+    &--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 0;
+
+        span {
+            font-size: $fs-title-1;
+            font-weight: $fw-7;
+        }
+
+        img {
+            margin: 0.625rem;
+        }
+    }
+
+    &--summary {
+        display: flex;
+
+        padding: 0.5rem 0;
+
+        span {
+            margin: 0 1rem 0 0;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+
+            &--name {
+                font-size: $fs-title-3;
+                font-weight: $fw-7;
+
+                line-height: 1.6rem;
+            }
+
+            &--purpose {
+                font-size: 0.875rem;
+                font-weight: $fw-4;
+
+                color: $color-neutral-100;
+
+                line-height: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import '../../../styles/variables/variables';
+.drawer {
+  :global {
+    .ant-drawer-body {
+      padding: 0 !important;
+    }
+  }
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.home__drawer {
+}
+.home__info {
+  padding: 1rem;
+  .buttonBack {
+    float: right;
+    position: absolute;
+    top: -1.2rem;
+    right: 1rem;
+    z-index: 2;
+  }
+  .info__image {
+    text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+      position: relative !important;
+    }
+    .image__main {
+      border-radius: 1.25rem;
+      position: relative;
+    }
+  }
+  .info__bio {
+    padding: 0.3rem;
+    .bio__name {
+      font-size: $fs-title-3;
+      font-weight: $fw-7;
+      line-height: 2rem;
+      margin-top: 1rem;
+    }
+    .bio__distance {
+      padding: 0.3rem 0 1rem;
+      img {
+        width: auto;
+        padding: 0 0.6rem 0 0;
+      }
+    }
+    .bio__desc {
+      background-color: $color-neutral-10;
+      padding: 0.75rem 0.5rem;
+      border-radius: 0.8rem;
+      font-size: $fs-caption;
+      line-height: 1.3rem;
+
+      p {
+        overflow-wrap: anywhere;
+      }
+    }
+    .bio__fav {
+      padding: 1.5rem 0;
+      .fav__title {
+        margin-bottom: 0.75rem;
+        color: $color-neutral-65;
+      }
+      .fav__wrapper {
+        margin: 1rem;
+      }
+      .fav__detail {
+        background-color: $color-neutral-10;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem 0.5rem 0.3rem 0;
+        border-radius: 1rem;
+        span {
+          margin-left: 0.5rem;
+          font-weight: $fw-5;
+        }
+      }
+    }
+    .bio__tags {
+      .tags__title {
+        margin-bottom: 0.75rem;
+        color: $color-neutral-65;
+      }
+
+      .tags__detail {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem 0.5rem 0.3rem 0;
+        border-radius: 1rem;
+      }
+    }
+  }
+  .info__photos {
+    margin: 3rem 0 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+  .hobby__text {
+    font-weight: $fw-7;
+    overflow-wrap: anywhere;
+  }
+}

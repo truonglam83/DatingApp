@@ -1,0 +1,66 @@
+@import './variables/variables';
+
+.welcome {
+  :global {
+    .ant-spin-dot-item {
+      background-color: $color-neutral-white;
+    }
+  }
+  .welcome__body {
+    .body__title {
+      font-size: $fs-title-2;
+      color: $color-primary-main;
+      font-weight: $fw-8;
+      padding-bottom: 1rem;
+    }
+    .body__text {
+      font-size: $fs-title-3;
+      font-weight: $fw-7;
+      color: $color-neutral-100;
+      padding-bottom: 1rem;
+    }
+    .body__description {
+      font-size: $fs-body-2;
+      line-height: $lh-2;
+      color: $color-neutral-disable;
+      padding-right: 2rem;
+      letter-spacing: 0.05rem;
+    }
+    .body__button {
+      width: 100%;
+      margin: 1rem 0 2rem;
+      padding: 1rem 3.1rem;
+      border: none;
+      border-radius: 1rem;
+      background-color: $color-neutral-100;
+      color: $color-neutral-white;
+      font-weight: $fw-7;
+      letter-spacing: 0.08rem;
+    }
+
+    img {
+      padding: 1.125rem 0 2rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .welcome__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .footer__text {
+      font-size: 0.75rem;
+      color: $color-neutral-disable;
+      padding-bottom: 0.6rem;
+      letter-spacing: 0.05rem;
+    }
+
+    .footer__social {
+      img {
+        margin: 0 0.7rem;
+      }
+    }
+  }
+}
